@@ -10,17 +10,17 @@ Es una metrica **clave,** estas son solo unas cuantas respecto a las metricas pe
 
 entendemos asi que todos los KPI’s son metricas pero no todas las metricas son KPI’s
 
-1)porcentaje de crecimiento del promedio de estrellas(calificación):
-    PCC= (promedio estrellas año 2) - (promedio estrellas año 1) / ((promedio estrellas año 1)
+1) Variación porcentual del promedio de estrellas(calificación):
+    PCC= (promedio estrellas año 2) - (promedio estrellas año 1) / ((promedio estrellas año 1) *100
 
-2) crecimiento de reviews:
+2) Variación porcentual de reviews:
     PCR = (cantidad de reviews año 2) - (cantidad de reviews año 1) /((cantidad de reviews año 1))
 
 3) popularidad: 
     PO = promedio(polaridad*(1-subjetividad))
 
-4) cantidad de sucursales por rubro cerradas por rubro
-    CSC = cantidad de sucursales cerradas) / cantidad de sucursales totales por rubro *100
+4) fracción de sucursales cerradas por rubro
+    CSC = (cantidad de sucursales cerradas) / (cantidad de sucursales totales por rubro) *100
 
 
 ### Objetivos:
@@ -38,11 +38,11 @@ entendemos asi que todos los KPI’s son metricas pero no todas las metricas son
 users:
 'n_user_id': integer user code,
 'user_id': alphanumeric user code, 
-'review_count': number of reviews made by the user, 
+'review_count': number of reviews written by the user, 
 'yelping_since': user registration date, 
-'useful': number of useful ,
-'funny', 
-'cool', 
-'friends', 
-'fans', 
-'average_stars'
+'useful': number of useful votes given by the users to other user's reviews,
+'funny': number of funny votes given by the users to other user's reviews, 
+'cool': number of cool votes given by the users to other user's reviews, 
+'friends': comma separated str with friend's alphanumeric codes , 
+'fans': number of fans, 
+'average_stars': average reviews stars given by the user.
