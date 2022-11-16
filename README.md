@@ -32,6 +32,11 @@ entendemos asi que todos los KPI’s son metricas pero no todas las metricas son
 ### Alcance del proyecto
 
 ### stack tecnológico
+- Extraction and transformation:
+- load and storage:
+- analysis:
+- incremental load or streaming
+- Presentation
 
 ### Diccionario de datos
 
