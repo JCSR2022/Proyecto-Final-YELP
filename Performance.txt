@@ -1,0 +1,11 @@
+Performance entre los motores de Base de datos MySQL vs PostgreSQL
+
+-En cuanto a la velocidad el que es mejor es PostgreSQL ya que tiene funciones de lectura y escritura en paralelo.
+
+-PostgreSQL, es recomendable para base de datos de grandes tamaños como
+en este caso se tomaría como ejemplo el dataset "review" y en 
+cuanto al performance en el tiempo de respuesta de consultas complejas también es el mejor.
+
+-En cuanto al  cumplimiento de los principios ACID, esto es, atomicidad, consistencia, integridad y durabilidad de la información. PostgreSQL, te asegura con mayor seguridad que no se van a producir pérdidas de información o fallos a la hora de transmitir los datos.
+
+-PostgreSQL, sigue siendo el mejor soporte para diferentes tipos de datos, ya que este motor permite soporte nativo y extensiones para más tipos de datos aparte de las estándar.
