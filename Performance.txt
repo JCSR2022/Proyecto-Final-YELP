@@ -9,4 +9,5 @@ in terms of performance in response time for complex queries, it is also the bes
 -Regarding compliance with the ACID principles, that is, atomicity, consistency, integrity and durability of the information.
 PostgreSQL ensures you with greater security that there will be no loss of information or failures when transmitting data.
 
--PostgreSQL, is still the best support for different data types, since this engine allows native support and extensions for more data types than the standard ones.
+-PostgreSQL, is still the best support for different data types, 
+since this engine allows native support and extensions for more data types than the standard ones.
