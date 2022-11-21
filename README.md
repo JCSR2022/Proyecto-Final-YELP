@@ -36,7 +36,7 @@ entendemos asi que todos los KPI’s son metricas pero no todas las metricas son
 - load and storage:
 - analysis:
 - incremental load or streaming
-- Presentation
+- Presentation: dash plotly
 
 ### Diccionario de datos
 
