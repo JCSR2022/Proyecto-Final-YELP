@@ -42,7 +42,6 @@ entendemos asi que todos los KPI’s son metricas pero no todas las metricas son
 
 users:
 'n_user_id': integer user code,
-'user_id': alphanumeric user code, 
 'review_count': number of reviews written by the user, 
 'yelping_since': user registration date, 
 'useful': number of useful votes given by the users to other user's reviews,
@@ -51,6 +50,10 @@ users:
 'friends': comma separated str with friend's alphanumeric codes , 
 'fans': number of fans, 
 'average_stars': average reviews stars given by the user.
+
+users_ids:
+'n_user_id': integer user code,
+'user_id': alphanumeric user code 
 
 # Work Flow
 ## Extraction and tranformation
