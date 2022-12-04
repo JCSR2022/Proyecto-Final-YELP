@@ -1,8 +1,0 @@
-dash
-plotly
-gunicorn
-pandas
-nbformat
-SQLAlchemy
-pycountry-convert
-pymysql
