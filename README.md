@@ -1,68 +1,41 @@
-# PF-YELP
+El proyecto parte asumiendo que hemos sido contratados por un conglomerado de empresas restaurantes y afines para predecir cuáles serán los rubros de negocio que más crecen utilizando la data de la aplicación Yelp, esta plataforma contiene principalmente reseñas de todo tipo de negocios, con históricos de negocios, usuarios y sus experiencias en los mismos.
 
-## Metricas
+La actividad se desarrolla utilizando la metodología de trabajo SCRUM con SPRINTS de una semana, en el transcurso de 4 semanas se presentan aplicación web que permita hacer las siguientes recomendaciones:
 
-Son indicadores que mide la empresa, usando todos los datos que tiene a disposicion, ej. numero de ordenes por dia en un restaurante
+1- Negocios que crecerán, donde están ubicados, donde existen oportunidades de inversión
 
-### KPI’s (Key Performance Indicator)
+2. Desarrollar un sistema de recomendaciones para usuarios de Yelp Se trabajo con las siguientes herramienta tecnológicas: Python (Pandas, SQLAlchemy, Matplotlib, seaborn, Dash, Sklearn), MySQL, Plotly-Dash, Railway, G-Drive, G-Colab,G-CloudSQL. Haciendo seguimiento del proyecto usando Github,Trello, y herramientas para trabajo en equipo en desarrollo de producto como figma, Canva, Notion.
 
-Es una metrica **clave,** estas son solo unas cuantas respecto a las metricas pero tienen un alto impacto en el negocio, por lo que mejorarlas representara un inpacto positivo para la empresa,
+El desarrollo culminó con una aplicación interactiva donde el usuario puede acceder
 
-entendemos asi que todos los KPI’s son metricas pero no todas las metricas son KPI’s
+ 
+Información del proyecto:
 
-1) Variación porcentual del promedio de estrellas(calificación):
-    PCC= (promedio estrellas año 2) - (promedio estrellas año 1) / ((promedio estrellas año 1) *100
+https://www.youtube.com/watch?v=OdFMln8FgOY&t=95s
 
-2) Variación porcentual de reviews:
-    PCR = (cantidad de reviews año 2) - (cantidad de reviews año 1) /((cantidad de reviews año 1))
+https://vigorous-shawl-3d2.notion.site/Documentaci-n-PlusYelp-4b2f3a69253e4c03b224971729391dbc
 
-3) popularidad: 
-    PO = promedio(polaridad*(1-subjetividad))
+ 
 
-4) porcentaje de sucursales cerradas por rubro
-    CSC = (cantidad de sucursales cerradas) / (cantidad de sucursales totales por rubro) *100
+Detalles:
 
+KPI’s (Key Performance Indicator)
 
-### Objetivos:
+Es una métrica clave, estas son solo unas cuantas respecto a las métricas pero tienen un alto impacto en el negocio, por lo que mejorarlas representara un impacto positivo para la empresa, entendemos así que todos los KPI’s son métricas pero no todas las métricas son KPI’s:
 
-- Predecir cuales son los rubros de negocios que mas creceran o decaeran
-- Predecir la localizacin mas conveniente de nuevos locales de estos negocios evaluados
-- Implementar un sistema de recomendaciones para usuarios
+·         Variación porcentual del promedio de estrellas(calificación): PCC= (promedio estrellas año 2) - (promedio estrellas año 1) / ((promedio estrellas año 1) *100
 
-### Alcance del proyecto
+·         Variación porcentual de reviews: PCR = (cantidad de reviews año 2) - (cantidad de reviews año 1) /((cantidad de reviews año 1))
 
-### stack tecnológico
-- Extraction and transformation:
-- load and storage:
-- analysis:
-- incremental load or streaming
-- Presentation: dash plotly
+·         popularidad: PO = promedio(polaridad*(1-subjetividad))
 
-### Diccionario de datos
+·         porcentaje de sucursales cerradas por rubro CSC = (cantidad de sucursales cerradas) / (cantidad de sucursales totales por rubro) *100
 
-users:
-'n_user_id': integer user code,
-'review_count': number of reviews written by the user, 
-'yelping_since': user registration date, 
-'useful': number of useful votes given by the users to other user's reviews,
-'funny': number of funny votes given by the users to other user's reviews, 
-'cool': number of cool votes given by the users to other user's reviews, 
-'friends': comma separated str with friend's alphanumeric codes , 
-'fans': number of fans, 
-'average_stars': average reviews stars given by the user.
+Objetivos:
 
-users_ids:
-'n_user_id': integer user code,
-'user_id': alphanumeric user code 
+·         Predecir cuales son los rubros de negocios que más crecerán o decaerán
 
-# Work Flow
-## Extraction and tranformation
+·         Predecir la localización más conveniente de nuevos locales de estos negocios evaluados
 
-### Users dataset:
-- load: it was made in chunks of 400.000 rows to the dataframe called "users"
-- drop columns: all the columns with amounts of compliments.
-- change data type to use less memory: 'average_stars':np.float32 , 'fans':'uint16', 'review_count':'uint16', 'cool':'uint32', 'useful':'uint32', 'funny':'uint32', yelping_since:'%Y-%m-%d %H:%M:%S'
--  get integer index to replace alphanumeric index: to use less memory the alphanumerid user_id columns was replaced by the dataframe index(0 - 1987896)
--   No duplicated or null founded 
-
+·         Implementar un sistema de recomendaciones para usuarios
 
